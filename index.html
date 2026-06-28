@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>STUB — Marketplace</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a href="#main" class="skip-link"></a>
+
+  <header class="site-header">
+    <a href="#/" class="brand"><span class="dot">●</span>STUB <small>marketplace</small></a>
+    <div class="header-actions">
+      <a href="#/cart" class="icon-link">
+        🎫 Cart <span class="cart-badge" data-cart-badge>0</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main" class="page">
+
+    <!-- ============ VIEW 1: LISTING (Task 1) ============ -->
+    <section id="view-listing" class="view">
+      <div class="page-head">
+        <p class="eyebrow"></p>
+        <h1>Every product, one stub at a time</h1>
+        <p>A concise, memorable phrase that perfectly captures your unique value proposition and speaks directly to your target audience's desires</p>
+      </div>
+
+      <div class="toolbar">
+        <input type="search" id="searchInput" placeholder="Search products…" />
+        <select id="categorySelect">
+          <option value="">All categories</option>
+        </select>
+        <select id="sortSelect">
+          <option value="default">Sort: default</option>
+          <option value="price-asc">Price: low to high</option>
+          <option value="price-desc">Price: high to low</option>
+          <option value="rating-desc">Rating: best first</option>
+        </select>
+      </div>
+
+      <section class="grid" id="productGrid">
+        <p class="state-msg">Loading products…</p>
+      </section>
+    </section>
+
+    <!-- ============ VIEW 2: PRODUCT DETAIL (Task 2) ============ -->
+    <section id="view-product" class="view" hidden>
+      <a href="#/" class="back-link"></a>
+      <p class="eyebrow">Product Description</p>
+      <div id="productRoot">
+        <p class="state-msg">Loading product…</p>
+      </div>
+    </section>
+
+    <!-- ============ VIEW 3: CART + BILL (Task 3) ============ -->
+    <section id="view-cart" class="view" hidden>
+      <div class="page-head">
+        <p class="eyebrow">Cart &amp; Bill Summary</p>
+        <h1>Your cart</h1>
+        <p>Review your items, adjust quantities, and check the bill before you pay.</p>
+      </div>
+      <div id="cartRoot"></div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
